@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      PORT: 4173
+    ports:
+      - "4173:4173"
